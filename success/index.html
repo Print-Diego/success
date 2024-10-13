@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Base CSS -->
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #f7f9fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .success-container {
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto;
+            fill: none;
+            stroke: #8EC343;
+            stroke-width: 2;
+            animation: success-animation 0.8s ease-in-out forwards;
+        }
+
+        @keyframes success-animation {
+            0% {
+                stroke-dasharray: 240px, 240px;
+                stroke-dashoffset: 240px;
+            }
+            100% {
+                stroke-dashoffset: 0px;
+            }
+        }
+
+        h4 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+
+    <!-- Redirect Script -->
+    <script>
+        setTimeout(function () {
+            window.location.href = "https://imajin.id/id";
+        }, 3000); // Redirect after 3 seconds
+    </script>
+</head>
+
+<body>
+    <div class="success-container">
+        <!-- Success Icon -->
+        <svg class="success-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+            <circle cx="36" cy="36" r="35" style="stroke-dasharray:240px, 240px; stroke-dashoffset:480px;"></circle>
+            <path d="M17.417,37.778l9.93,9.909l25.444-25.393" style="stroke-dasharray:50px, 50px; stroke-dashoffset:0px;"></path>
+        </svg>
+        
+        <!-- Success Message -->
+        <h4>Request successfully sent!</h4>
+        <p>You will be redirected to the Imajin website in 3 seconds.</p>
+    </div>
+</body>
+
+</html>
